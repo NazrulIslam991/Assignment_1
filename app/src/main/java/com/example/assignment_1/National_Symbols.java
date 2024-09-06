@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.View;
+import android.widget.Toast;
 
 public class National_Symbols extends AppCompatActivity {
 
@@ -78,6 +79,8 @@ public class National_Symbols extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(National_Symbols.this,"Next Button is Clicked",Toast.LENGTH_SHORT).show();
+
                 currentIndex++;
                 if (currentIndex >= titles.length) {
                     currentIndex = 0;
@@ -89,6 +92,8 @@ public class National_Symbols extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(National_Symbols.this,"Back Button is Clicked",Toast.LENGTH_SHORT).show();
+
                 currentIndex--;
                 if (currentIndex < 0) {
                     currentIndex = titles.length - 1;

@@ -25,7 +25,8 @@
         android:layout_height="150dp"
         android:src="@drawable/flag"
         android:layout_below="@id/title"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/symbol" />
 
     <TextView
         android:id="@+id/description"
@@ -41,7 +42,8 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="italic"
-        android:justificationMode="inter_word" />
+        android:justificationMode="inter_word"
+        tools:ignore="UnusedAttribute" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,22 +52,24 @@
         android:gravity="center"
         android:layout_alignParentBottom="true"
         android:padding="10dp"
-        android:layout_marginBottom="30dp">
+        android:layout_marginBottom="20dp">
 
         <Button
             android:id="@+id/back"
             android:layout_width="120dp"
             android:layout_height="48dp"
-            android:text="Back"
+            android:text="@string/back"
             android:background="@drawable/custon_button"
-            android:layout_marginEnd="10dp" />
+            android:layout_marginEnd="10dp"
+            tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/next"
             android:layout_width="120dp"
             android:layout_height="48dp"
             android:background="@drawable/custon_button"
-            android:text="Next" />
+            android:text="@string/next"
+            tools:ignore="ButtonStyle" />
     </LinearLayout>
 
 </RelativeLayout>
