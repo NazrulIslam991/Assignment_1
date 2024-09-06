@@ -17,7 +17,6 @@ public class National_Symbols extends AppCompatActivity {
 
     private int currentIndex = 0;
 
-    // UI components
     private TextView titleTextView;
     private TextView descriptionTextView;
     private ImageView symbolImageView;
